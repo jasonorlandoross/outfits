@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa%7CRighteous');
+
+body {
+  background: url(https://cutewallpaper.org/28/designer-wallpaper-black-leopard-spots/747227874.jpg);
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  background: rgb(35, 34, 33);
+  margin:0;
+  margin-bottom: .5em;
+  padding: 1em;
+  text-align: center;
+}
+
+a {
+  color: rgb(6, 4, 1);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgb(168, 168, 165);
+  font-size: 1.5em;
+  background: rgba(30, 51, 243, 0.9);
+}
+
+a:hover {
+  color: ghostwhite;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: rgb(9, 10, 16);
+}
+
+input[type=text] {
+  padding: .3em;
+}
+
+input[type=submit] {
+  padding: .3em;
+  color: rgb(41, 58, 212);
+  background: rgba(26, 16, 226, 0.9)
+  font-size: 1em;
+  border-radius: 10%;
+}
