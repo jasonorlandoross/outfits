@@ -3,13 +3,13 @@ const Default = require('../layouts/Default.jsx')
 
 class Index extends React.Component {
   render () {
-    const { outfits } = this.props
+    const { shoes } = this.props
     return (
-      <Default title='Outfits Index Page'>
+      <Default title='Shoes Index Page'>
         <ul>
           {
-                        outfits.map((outfit) => {
-                          const { name, color, readyToWear, _id } = outfit
+                        shoes.map((shoe) => {
+                          const { name, color, readyToWear, _id } = shoe
                           return (
                             <li key={_id}>
                               <a href={`/outfits/${_id}`}>
