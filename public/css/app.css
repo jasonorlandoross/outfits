@@ -7,8 +7,9 @@ body {
 }
 
 h1 {
-  font-family: 'Righteous', cursive;
-  background: rgb(35, 34, 33);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  background: rgb(8, 4, 0);
   margin:0;
   margin-bottom: .5em;
   padding: 1em;
@@ -32,7 +33,7 @@ li {
 }
 
 li a {
-  color: rgb(9, 10, 16);
+  color: rgb(243, 244, 247);
 }
 
 input[type=text] {
@@ -40,6 +41,8 @@ input[type=text] {
 }
 nav a {
   margin-right: 10%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 p{
     padding: .25em;
@@ -47,9 +50,10 @@ p{
 }
 input[type=submit] {
     padding: .3em;
-    color: rgb(74, 227, 74);
-    background: mediumseagreen;
-    font-size: 1em;
-    border-radius: 10%;
+    color: rgb(29, 9, 213);
+    background: rgb(82, 87, 87);
+    font-size: 1.5em;
+    border-radius: 0%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
