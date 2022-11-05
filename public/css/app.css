@@ -10,18 +10,20 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
   background: rgb(8, 4, 0);
-  margin:0;
-  margin-bottom: .5em;
-  padding: 1em;
+  margin: auto;
+  margin-bottom: em;
+  padding: .2em;
   text-align: center;
 }
 
 a {
-  color: rgb(6, 4, 1);
+  color: rgb(248, 245, 241);
   text-decoration: none;
   text-shadow: 1px 1px 1px rgb(168, 168, 165);
   font-size: 1.5em;
-  background: rgba(30, 51, 243, 0.9);
+  background: rgba(0, 0, 3, 0.9);
+  bottom: 0%;
+  position: absolute;
 }
 
 a:hover {
@@ -39,18 +41,19 @@ li a {
 input[type=text] {
   padding: .3em;
 }
-nav a {
-  margin-right: 10%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+nav a {
+  margin-right: 20%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 p{
     padding: .25em;
     background-color: rgba(255, 255, 255, 0.8);
 }
 input[type=submit] {
     padding: .3em;
-    color: rgb(29, 9, 213);
+    color: rgb(244, 243, 250);
     background: rgb(82, 87, 87);
     font-size: 1.5em;
     border-radius: 0%;

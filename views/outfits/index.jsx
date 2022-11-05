@@ -5,7 +5,7 @@ class Index extends React.Component {
   render () {
     const { outfits } = this.props
     return (
-      <Default title='Your Closet'>
+      <Default title='YOUR WARDROBE'>
         <ul>
           {
                         outfits.map((outfit) => {
