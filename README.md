@@ -11,7 +11,7 @@ You will eventually be able to click a "Dress Me" button and then the applicatio
 
 ![My Image](https://cdn.vox-cdn.com/thumbor/Ezb2qYDhclf8-lbTKJ-wbB9ClgQ=/0x32:1584x861/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23390870/clueless.jpg)
 
-This is not my completed desired project, I plan on continueing to improve the functionality and styling to make it ressemble the application from Clueless! Displayed in the photo above! 
+I plan on continueing to improve the functionality and styling to make it ressemble the application from Clueless! Displayed in the photo above! 
 
 
 ![My Image](https://lucid.app/lucidchart/23e1d3ee-f56e-4be7-beef-868d9fd9ce0f/edit?viewport_loc=217%2C13%2C1579%2C911%2C0_0&invitationId=inv_b98bc0e4-2170-42e9-a4e3-b7a103b6c6e3)
