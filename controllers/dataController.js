@@ -1,4 +1,5 @@
 const Outfit = require('../models/outfit')
+const Shoe = require('../models/shoe')
 
 const dataController = {
   // Index,
@@ -10,6 +11,18 @@ const dataController = {
         })
       } else {
         res.locals.data.outfits = foundOutfits
+        next()
+      }
+    })
+  },
+  indexShoe (req, res, next) {
+    Shoe.find({ username: req.session.username }, (err, found) => {
+      if (err) {
+        res.status(400).send({
+          msg: err.message
+        })
+      } else {
+        res.locals.data.shoes = found
         next()
       }
     })
@@ -45,14 +58,39 @@ const dataController = {
   create (req, res, next) {
     req.body.readyToWear = req.body.readyToWear === 'on'
     req.body.username = req.session.username
+    
+    
     Outfit.create(req.body, (err, createdOutfit) => {
       if (err) {
         res.status(400).send({
           msg: err.message
         })
       } else {
-        res.locals.data.outfit = createdOutfit
-        next()
+        Shoe.count({ username: req.session.username }).exec(function (err, count) {
+            // Get a random entry
+            var random = Math.floor(Math.random() * count)
+            Shoe.findOne({ username: req.session.username }).skip(random).exec(
+              function (err, result) {
+                if (result == null){
+                    res.locals.data.outfit = createdOutfit
+
+                    next()
+                    } else {
+                        // liekly source of futer errors once you have shoes int he DB
+                        req.body.shoeID = result._id // might be .id
+                        Outfit.findByIdAndUpdate(createdOutfit._id, req.body, { new: true }, (err, updatedOutfit) => {
+                            if (err) {
+                              res.status(400).send({
+                                msg: err.message
+                              })
+                            } else {
+                              res.locals.data.outfit = updatedOutfit
+                              next()
+                            }
+                          })
+                        }
+              })
+          })
       }
     })
   },
@@ -66,8 +104,14 @@ const dataController = {
           output: 'Could not find a outfit with that ID'
         })
       } else {
-        res.locals.data.outfit = foundOutfit
-        next()
+        Shoe.findById(foundOutfit.shoeID,(err,foundShoe)=>{
+            if (!err) {
+                res.locals.data.shoe = foundShoe
+            }
+            res.locals.data.outfit = foundOutfit
+            next()
+    })
+//        next()
       }
     })
   }

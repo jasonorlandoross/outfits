@@ -8,7 +8,7 @@ class Edit extends React.Component {
       <Default title={`${name} Edit Page`} outfit={this.props.outfit}>
 
         <form method='POST' action='/outfit'>
-          Name: <input type='type' name='name' placeholder='Name of Outfit Here' /><br />
+          Name: <input type='type' name='name' placeholder='CLothing Type' /><br />
           Color: <input type='text' name='color' placeholder='Color of Outfit Here' /><br />
           Is Ready To Wear: <input type='checkbox' name='readyToWear' /><br />
           <input type='submit' value='Edit Outfit' />

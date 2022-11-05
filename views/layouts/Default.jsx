@@ -11,7 +11,8 @@ class Default extends React.Component {
         </head>
         <body>
           <nav>
-            <a href='/outfits'>Go to Home Page For Outfits</a>
+            <a href='/outfits'>Go to Your Closet</a>
+            <a href='/shoes'>Go to Your Shoes</a>
             <a href='/outfits/new'>Create a New Outfit</a>
             {outfit ? <a href={`/outfits/${outfit._id}/edit`}> {outfit.name} Edit Page </a> : ''}
             {outfit ? <a href={`/outfits/${outfit._id}`}>{outfit.name} Show Page</a> : ''}
